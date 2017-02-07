@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '6'
+- '7'
+install:
+- npm install
+script:
+- echo 'test'
+before_deploy:
+- echo 'start deploy'
+deploy:
+  provider: npm
+  email: embbnux@embbnux.com
+  api_key:
+    secure: qVurNUOXxzdY5eli2Ya6MK965QaijeEgKTYhq2flfsWmJa1O1e/bXUGD14S/emcietkQwNzKB/5260kt9Zh2kQvzdVVLzPLxBDGOSBz1CV/jRB0xGDBltRzfhjJ2vXxzV9QkJpyJrunumjae8gqF44m++Q5YHhsXX31j3j2zutUFHFUBTzvKckLzyHZ+0V3eM3SJVaNuC5QjlJl9YPbLOiV2ZHeSlofOecNzmpk+YUxRy9at9XHM/O0pukcF7Vwa2i9O8hkTppsX639F8GN8fznupRUzDuoFXrMCyASlfIv0lcMvqQpcE/rHefM+5cjAC2+XFtjq9uKusZfesH8ToCNaumGn6gNSM+o8cQ9UB9kr1tG4KxnMoof7YXY/WPKCjxs2EY4Xo8+/q5jO6t0druKi/lAh0tCDkR7vaTWixr131rPlR/r2KngaPFzybQsr5dF+6Tyjt31lgt5xuPwcZ6vJVDBeASXTpIFET5FhIVDATdCZhUxP6bSTPWSSNrjRC0kHuesEkLjS+4uewQ/O3U/rv6S5uVS9chdDq9Cg+qeY3yHE2nBiKU2f8VJbRczFeFb1EZSjIqFHydbgifEkfbuV3r4gI8HWqym3BRxfaCw5s0gryE7t/MWC3PTdhlBf0DCbRUeKJg/3GWkJVxe6ZN75WMoQhRy2t/QBkNSKe3Y=
+  on:
+    skip_cleanup: true
+    tags: true
+    repo: embbnux/koa-flash-message
