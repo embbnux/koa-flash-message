@@ -7,7 +7,7 @@ Flash messages middleware for [koa](https://github.com/koajs/koa) v2 application
 ## Installation
 
 ```
-$ npm install koa-flash
+$ npm install koa-flash-message
 ```
 
 koa-flash-message middleware depends on koa-generic-session. You must add koa-generic-session as a middleware prior to adding koa-flash-message
