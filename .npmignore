@@ -3,5 +3,7 @@
 /.idea
 /.git
 .travis.yml
+.babelrc
 /release.js
 /src
+/test
