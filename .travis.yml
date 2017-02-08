@@ -7,7 +7,7 @@ install:
 script:
 - echo 'test'
 before_deploy:
-- echo 'start deploy'
+- node release.js
 deploy:
   provider: npm
   email: embbnux@embbnux.com
@@ -18,3 +18,4 @@ deploy:
     skip_cleanup: true
     tags: true
     repo: embbnux/koa-flash-message
+    condition: "$TRAVIS_TAG =~ ^[0-9]+.[0-9]+.[0-9]+"

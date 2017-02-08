@@ -1,5 +1,6 @@
 /node_modules
 /*.log
 /.idea
+/.git
 .travis.yml
-/scripts
+/release.js
