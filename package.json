@@ -2,9 +2,10 @@
   "name": "koa-flash-message",
   "version": "0.1.0",
   "description": "Flash Messages Middleware For Koa",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rm -rf lib/ && babel -d lib src"
   },
   "author": "Embbnux Ji",
   "license": "MIT",
@@ -17,6 +18,10 @@
     "koa",
     "flash"
   ],
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-crocodile": "^1.0.0"
+  },
   "bugs": {
     "url": "https://github.com/embbnux/koa-flash-message/issues"
   },

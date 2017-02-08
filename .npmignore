@@ -4,3 +4,4 @@
 /.git
 .travis.yml
 /release.js
+/src
