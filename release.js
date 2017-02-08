@@ -28,8 +28,12 @@ function getVersion() {
 console.log('start release prepare');
 
 const packageInfo = JSON.parse(fs.readFileSync('package.json'));
-
 delete packageInfo.scripts;
+
+console.log('start release compile');
+cmd('npm run compile');
+
+packageInfo.main = 'lib/index.js';
 
 const version = getVersion();
 
