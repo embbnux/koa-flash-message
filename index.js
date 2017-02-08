@@ -67,14 +67,14 @@ class FlashMessage {
   }
 }
 
-const flashMessageMiddle = async function(ctx, next) {
+const flashMessageMiddleware = function(ctx, next) {
   const flashMessage = new FlashMessage(ctx);
   if (!ctx.state) {
     ctx.state = {};
   }
   ctx.state.flashMessage = flashMessage;
   ctx.flashMessage = flashMessage;
-  await next();
+  return next();
 };
 
-export default flashMessageMiddle;
+export default flashMessageMiddleware;
