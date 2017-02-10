@@ -1,4 +1,4 @@
-class FlashMessage {
+export class FlashMessage {
   constructor(ctx) {
     this._session = ctx.session;
     this._flashMessage = ctx.session && ctx.session.flashMessage;
