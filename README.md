@@ -1,6 +1,7 @@
 # koa-flash-message
 
 [![Build Status](https://travis-ci.org/embbnux/koa-flash-message.svg?branch=master)](https://travis-ci.org/embbnux/koa-flash-message)
+[![codecov](https://codecov.io/gh/embbnux/koa-flash-message/branch/master/graph/badge.svg)](https://codecov.io/gh/embbnux/koa-flash-message)
 
 Flash messages middleware for [koa](https://github.com/koajs/koa) v2 application.
 

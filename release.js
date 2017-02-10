@@ -32,6 +32,8 @@ delete packageInfo.scripts;
 
 console.log('start release compile');
 cmd('npm run compile');
+console.log('start release coverage');
+cmd('npm run coverage');
 
 packageInfo.main = 'lib/index.js';
 
