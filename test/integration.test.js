@@ -83,7 +83,7 @@ describe('FlashMessage Integration Test', () => {
            });
   });
 
-  it('return emptt flash messages when session is null', function (done) {
+  it('return empty flash messages when session is null', function (done) {
     const app = new Koa();
     app.keys = [ 'a', 'b' ];
     app.use(flashMessage);
