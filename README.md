@@ -34,7 +34,7 @@ app.use(convert(session({
   key: '__sid'
 })));
 
-app.use(flashMessageMiddle);
+app.use(flashMessage);
 ```
 
 ### add message to flash messages
