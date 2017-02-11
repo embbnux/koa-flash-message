@@ -1,5 +1,6 @@
 # koa-flash-message
 
+[![NPM Version](https://img.shields.io/npm/v/koa-flash-message.svg?style=flat-square)](https://www.npmjs.com/package/koa-flash-message)
 [![Build Status](https://travis-ci.org/embbnux/koa-flash-message.svg?branch=master)](https://travis-ci.org/embbnux/koa-flash-message)
 [![codecov](https://codecov.io/gh/embbnux/koa-flash-message/branch/master/graph/badge.svg)](https://codecov.io/gh/embbnux/koa-flash-message)
 
