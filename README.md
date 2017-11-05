@@ -21,6 +21,7 @@ import Koa from 'koa';
 import session from 'koa-generic-session';
 import koaRedis from 'koa-redis';
 import flashMessage from 'koa-flash-message';
+import convert from 'koa-convert';
 
 const redisStore = koaRedis({
   url: config.redisUrl
